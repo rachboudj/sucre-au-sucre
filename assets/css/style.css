@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/srf8wqp.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Liens utiles */
+:root {
+    --noir: #272727;
+    --rose: #F2ACEB;
+    --jaune: #FFEC5F;
+    --marron-claire: #FDEEDD;
+    --police-titre: "cooper-black-std", serif;
+    --police-texte: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: var(--police-titre);
+    font-size: 8em;
+}
+
+h2 {
+    font-family: var(--police-titre);
+    font-size: 5em;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--noir);
+    font-weight: 500;
+}
