@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/srf8wqp.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -10,21 +10,25 @@
 /* Liens utiles */
 :root {
     --noir: #272727;
+    --violet: #692862;
     --rose: #F2ACEB;
     --jaune: #FFEC5F;
     --marron-claire: #FDEEDD;
+    --blanc: #ffffff;
+    --ombre: #B581B0;
+    --gris: #BFBFBF;
     --police-titre: "cooper-black-std", serif;
     --police-texte: 'Poppins', sans-serif;
 }
 
 h1 {
     font-family: var(--police-titre);
-    font-size: 8em;
+    font-size: 3em;
 }
 
 h2 {
     font-family: var(--police-titre);
-    font-size: 5em;
+    font-size: 1.8em;
 }
 
 li {
@@ -39,4 +43,201 @@ a {
     text-decoration: none;
     color: var(--noir);
     font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.marron-claire {
+    color: var(--marron-claire);
+}
+
+/* Le header */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+header .logo {
+    font-size: 1.6em;
+    font-family: var(--police-titre);
+    color: var(--blanc);
+    -webkit-text-stroke: 1.5px var(--noir);
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo .au:nth-child(2), .sucre:nth-child(3){
+    margin-top: -20px;
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+.menu-burger .burger-button {
+    z-index: 9;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-burger .burger-button .burger-top {
+    width: 30px;
+    border: 1px solid var(--jaune);
+    background-color: var(--jaune);
+    display: block;
+    transition: .5s;
+}
+
+.menu-burger .burger-button .burger-middle {
+    width: 30px;
+    border: 1px solid var(--noir);
+    background-color: var(--noir);
+    display: block;
+    transition: .5s;
+}
+
+.menu-burger .burger-button .burger-bottom {
+    width: 30px;
+    border: 1px solid var(--violet);
+    background-color: var(--violet);
+    display: block;
+    transition: .5s;
+}
+
+/* ---------- Section présentation ---------- */
+
+#presentation {
+    padding: 12em 0 8em;
+    background-color: var(--rose);
+}
+
+#presentation .texte-presentation {
+    padding: 0 2em;
+}
+
+#presentation .texte-presentation .citation {
+    font-family: var(--police-texte);
+    font-weight: 600;
+    font-style: normal;
+    color: var(--blanc);
+}
+
+#presentation .texte-presentation h1 {
+    color: var(--blanc);
+    -webkit-text-stroke: 2px var(--noir);
+    text-shadow: 6px 6px 0px var(--ombre);
+    font-weight: 900;
+    margin-top: 0.4em;
+}
+
+#presentation .texte-presentation button {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--ombre);
+}
+
+#presentation .texte-presentation button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+#presentation img {
+    display: none;
+}
+
+/* ---------- Section à propos ---------- */
+#a-propos {
+    padding: 10em 0;
+}
+
+#a-propos img {
+    display: none;
+}
+
+#a-propos .texte-a-propos {
+    padding: 0 2em;
+}
+
+#a-propos .texte-a-propos h2 {
+    text-shadow: 4px 4px var(--gris);
+}
+
+#a-propos .texte-a-propos p {
+    margin-top: 1em;
+    font-family: var(--police-texte);
+    font-weight: 300;
+}
+
+#a-propos .texte-a-propos button {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#a-propos .texte-a-propos button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+#recette {
+    background-color: var(--marron-claire);
+    padding: 6em 0;
+}
+
+#recette h2 {
+    text-align: center;
+    padding: 0 1em;
+    font-size: 2em;
+    text-shadow: 4px 4px var(--gris);
+}
+
+#recette .container-carte-recette {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#recette .container-carte-recette .carte-recette {
+    width: 100%;
+    margin-top: 3em;
+}
+
+#recette .container-carte-recette .carte-recette .img-recette {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#recette .container-carte-recette .carte-recette .img-recette img {
+    width: 100%;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette {
+    text-align: center;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette h3 {
+    font-family: var(--police-texte);
+    font-weight: 600;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette p {
+    font-family: var(--police-texte);
+    font-weight: 300;
 }
