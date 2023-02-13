@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucré au sucre, les meilleurs donuts de France</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            Sucré au sucre
+            <span>sucré</span>
+            <span class="au">au</span>
+            <span class="sucre">sucre</span>
         </div>
         <nav>
             <ul>
@@ -20,17 +26,37 @@
                 <li><a href="#">Commander</a></li>
             </ul>
         </nav>
+        <div class="menu-burger">
+            <div class="burger-button">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+            <!-- <div class="burger-menu">
+                <div class="nav-burger">
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">La recette</a></li>
+                        <li><a href="#">La ref</a></li>
+                        <li><a href="#">Les créateurs</a></li>
+                        <li><a href="#">Commander</a></li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
     </header>
+
     <body>
         <main>
             <section id="presentation">
-                <div class="text-presentation">
-                    <span>Un donuts sucré c’est bien...</span>
-                    <h1>Mais au sucre, c'est mieux !</h1>
+                <div class="texte-presentation">
+                    <span class="citation">Un donuts sucré c’est bien...</span>
+                    <h1>Mais au sucre, <span class="marron-claire">c'est mieux </span> !</h1>
                     <button><a href="#">en savoir plus</a></button>
                 </div>
                 <div class="img-presentation">
-                    <img src="./assets/img/deux-donuts-vol-removebg.png" alt="Deux donuts qui voltige avec une ombre en dessous">
+                    <img src="./assets/img/deux-donuts-vol-removebg.png"
+                        alt="Deux donuts qui voltige avec une ombre en dessous">
                 </div>
             </section>
 
@@ -40,38 +66,42 @@
                 </div>
                 <div class="texte-a-propos">
                     <h2>À propos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deserunt at illum iusto, enim in aliquam est ducimus iste debitis minus ab, similique modi perferendis facere corporis id! Tempore, quam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deserunt at illum iusto, enim
+                        in aliquam est ducimus iste debitis minus ab, similique modi perferendis facere corporis id!
+                        Tempore, quam.</p>
                     <button><a href="#">voir les donuts</a></button>
                 </div>
             </section>
 
             <section id="recette">
                 <h2>Qu’est-ce qui fait que notre donuts est spécial ?</h2>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                <div class="container-carte-recette">
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>C’est un peu la base non ?</p>
+                        </div>
                     </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>C’est un peu la base non ?</p>
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>Ça n’a jamais fait de mal à personne.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
-                    </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>Ça n’a jamais fait de mal à personne.</p>
-                    </div>
-                </div>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
-                    </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>Parce qu’il n’y en a jamais assez.</p>
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>Parce qu’il n’y en a jamais assez.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -91,7 +121,8 @@
 
                 <div class="carte-donuts">
                     <div class="img-donuts">
-                        <img src="./assets/img/pack-donuts-removebg.png" alt="7 donuts dans une boîte dont un en dehors">
+                        <img src="./assets/img/pack-donuts-removebg.png"
+                            alt="7 donuts dans une boîte dont un en dehors">
                     </div>
                     <div class="texte-donuts">
                         <h3>Le pack</h3>
@@ -105,10 +136,15 @@
             <section id="ref">
                 <div class="texte-ref">
                     <h2>Je n'ai pas la ref</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="video-ref">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ior3WJUDy0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ior3WJUDy0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </section>
 
@@ -122,7 +158,9 @@
                         <h3>RebeuDeter</h3>
                         <p class="tag">@rebeudeter</p>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley.</p>
                         <div class="reseaux-createurs">
                             <img src="./assets/img/twitter.png" alt="Logo de twitter">
                             <img src="./assets/img/twitch.png" alt="Logo de twitch">
@@ -139,7 +177,9 @@
                         <h3>AmineMaTue</h3>
                         <p class="tag">@aminematue</p>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley.</p>
                         <div class="reseaux-createurs">
                             <img src="./assets/img/twitter.png" alt="Logo de twitter">
                             <img src="./assets/img/twitch.png" alt="Logo de twitch">
@@ -164,4 +204,5 @@
         </div>
     </footer>
 </body>
+
 </html>
