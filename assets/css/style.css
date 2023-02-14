@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/srf8wqp.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -29,6 +29,12 @@ h1 {
 h2 {
     font-family: var(--police-titre);
     font-size: 1.8em;
+    text-shadow: 4px 4px var(--gris);
+}
+
+p {
+    font-family: var(--police-texte);
+    font-weight: 300;
 }
 
 li {
@@ -42,14 +48,12 @@ button {
 a {
     text-decoration: none;
     color: var(--noir);
+    font-family: var(--police-texte);
     font-weight: 500;
+    cursor: pointer;
 }
 
 img {
-    width: 100%;
-}
-
-iframe {
     width: 100%;
 }
 
@@ -90,9 +94,13 @@ header nav {
     cursor: pointer;
 }
 
+.menu-burger .burger-button span {
+    border-radius: 30px;
+}
+
 .menu-burger .burger-button .burger-top {
     width: 30px;
-    border: 1px solid var(--jaune);
+    border: 2px solid var(--jaune);
     background-color: var(--jaune);
     display: block;
     transition: .5s;
@@ -100,7 +108,8 @@ header nav {
 
 .menu-burger .burger-button .burger-middle {
     width: 30px;
-    border: 1px solid var(--noir);
+    margin-top: 8px;
+    border: 2px solid var(--noir);
     background-color: var(--noir);
     display: block;
     transition: .5s;
@@ -108,10 +117,41 @@ header nav {
 
 .menu-burger .burger-button .burger-bottom {
     width: 30px;
-    border: 1px solid var(--violet);
+    margin-top: 8px;
+    border: 2px solid var(--violet);
     background-color: var(--violet);
     display: block;
     transition: .5s;
+}
+/* 
+.burger-top,
+.burger-bottom {
+    position: absolute;
+}
+
+.burger-top {
+    z-index: 20;
+}
+
+.burger-bottom {
+    z-index: 20;
+} */
+
+.burger-button:active .burger-top {
+    transform: rotate(45deg);
+    border-color: var(--jaune);
+    background-color: var(--jaune);
+}
+
+.burger-button:active .burger-middle {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.burger-button:active .burger-bottom {
+    transform: rotate(-45deg);
+    border-color: var(--violet);
+    background-color: var(--violet);
 }
 
 /* ---------- Section présentation ---------- */
@@ -171,10 +211,6 @@ header nav {
     padding: 0 2em;
 }
 
-#a-propos .texte-a-propos h2 {
-    text-shadow: 4px 4px var(--gris);
-}
-
 #a-propos .texte-a-propos p {
     margin-top: 1em;
     font-family: var(--police-texte);
@@ -195,6 +231,8 @@ header nav {
     color: var(--noir);
 }
 
+
+/* ---------- Section recette ---------- */
 #recette {
     background-color: var(--marron-claire);
     padding: 6em 0;
@@ -204,7 +242,6 @@ header nav {
     text-align: center;
     padding: 0 1em;
     font-size: 2em;
-    text-shadow: 4px 4px var(--gris);
 }
 
 #recette .container-carte-recette {
@@ -240,4 +277,203 @@ header nav {
 #recette .container-carte-recette .carte-recette .texte-recette p {
     font-family: var(--police-texte);
     font-weight: 300;
+}
+
+/* ---------- Section donuts ---------- */
+#donuts {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#donuts .carte-donuts {
+    background-color: var(--jaune);
+    margin-top: 2em;
+    padding: 2em 0 4em 0;
+    width: 90%;
+    border: 4px solid var(--noir);
+    border-radius: 30px 0 0 30px;
+    box-shadow: -6px -6px var(--gris);
+}
+
+#donuts .carte-rose {
+    background-color: var(--rose);
+    margin-top: 2em;
+    padding: 2em 0 4em 0;
+    width: 90%;
+    border: 4px solid var(--noir);
+    border-radius: 0 30px 30px 0;
+    box-shadow: 6px 6px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts {
+    text-align: center;
+}
+
+#donuts .carte-donuts .texte-donuts h3 {
+    font-size: 1.8em;
+    font-family: var(--police-texte);
+    font-weight: 600;
+}
+
+#donuts .carte-donuts .texte-donuts .prix {
+    font-size: 1.5em;
+    font-family: var(--police-titre);
+    font-weight: 600;
+}
+
+#donuts .carte-donuts .texte-donuts p {
+    width: 60%;
+    margin: 2em auto 0;
+    font-size: 0.9em;
+}
+
+#donuts .carte-donuts .texte-donuts button {
+    background-color: var(--rose);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts .btn-jaune {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+/* ---------- Section la ref ---------- */
+#ref {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: 4px solid var(--noir);
+    border-bottom: 4px solid var(--noir);
+    padding-bottom: 4em;
+}
+
+#ref .texte-ref {
+    margin-top: 4em;
+    padding: 0 2em;
+}
+
+#ref .texte-ref p {
+    margin-top: 1em;
+}
+
+#ref .video-ref {
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+    width: 100%;
+    background-image: url(/assets/img/amine-billy-twitch.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ref .video-ref iframe {
+    width: 90%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+
+/* ---------- Section créateurs ---------- */
+#createurs {
+    padding: 6em 0;
+    background-color: var(--marron-claire);
+}
+
+#createurs h2 {
+    padding: 0 1em;
+}
+
+#createurs .container-carte-createurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#createurs .carte-createurs {
+    background-color: var(--blanc);
+    width: 90%;
+    margin-top: 2em;
+    padding-bottom: 4em;
+    border-radius: 30px;
+    border: 4px solid var(--noir);
+    box-shadow: 6px 6px var(--gris);
+    overflow: hidden;
+}
+
+#createurs .carte-createurs .texte-createurs {
+    padding: 2em 2em 0 2em;
+}
+
+#createurs .carte-createurs .texte-createurs h3 {
+    font-family: var(--police-titre);
+    font-size: 2em;
+}
+
+#createurs .carte-createurs .texte-createurs .tag {
+    font-size: 1em;
+    margin-top: -4px;
+}
+
+#createurs .carte-createurs .texte-createurs p {
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs .img-reseaux {
+    width: 10%;
+    margin-right: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs .img-reseaux img {
+    width: 100%;
+}
+
+/* ---------- Section créateurs ---------- */
+footer {
+    padding: 4em 0;
+    background-color: var(--noir);
+    color: var(--blanc);
+}
+
+footer .nav-footer ul {
+    text-align: center;
+}
+
+footer .nav-footer ul li a {
+    color: var(--blanc);
+    font-weight: 300;
+}
+
+footer .copyright {
+    margin-top: 3em;
+    text-align: center;
+}
+
+footer .copyright p {
+    font-weight: 500;
+}
+
+footer .copyright a {
+    color: var(--marron-claire);
 }
