@@ -441,7 +441,7 @@ header nav {
 }
 
 #createurs .carte-createurs .reseaux-createurs .img-reseaux {
-    width: 10%;
+    width: 25px;
     margin-right: 2em;
 }
 
@@ -476,4 +476,122 @@ footer .copyright p {
 
 footer .copyright a {
     color: var(--marron-claire);
+}
+
+@media screen and (min-width: 768px) {
+    /* ---------- Section présentation ---------- */
+    #presentation {
+        display: flex;
+    }
+    
+    #presentation .img-presentation img {
+        display: block;
+    }
+
+    /* ---------- Section à propos ---------- */
+    #a-propos {
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #a-propos .img-a-propos img {
+        display: block;
+    }
+
+    #a-propos .texte-a-propos {
+        padding: 0 4em 0 0;
+    }
+
+    /* ---------- Section recette ---------- */
+    #recette h2 {
+        font-size: 2.5em;
+    }
+
+    #recette .container-carte-recette {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #recette .container-carte-recette .carte-recette {
+        width: 33%;
+    }
+
+    /* ---------- Section donuts ---------- */
+    #donuts {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #donuts .carte-donuts {
+        width: 45%;
+    }
+
+    /* ---------- Section la ref ---------- */
+    #ref {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #ref .texte-ref {
+        margin-top: 0;
+        padding: 0 2em;
+        width: 50%;
+    }
+
+    #ref .video-ref {
+        width: 50%;
+    }
+
+    #ref .video-ref iframe {
+        height: 20vh;
+    }
+
+    /* ---------- Section créateurs ---------- */
+    #createurs .container-carte-createurs .carte-createurs {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .img-createurs {
+        width: 40%;
+        border-right: 4px solid var(--noir);
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .aminematue-bg {
+        border-right: none;
+        border-left: 4px solid var(--noir);
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .img-createurs img {
+        width: 100%;
+        object-fit: fill;
+        /* display: none; */
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .texte-createurs {
+        width: 60%;
+        padding: 3em 2em;
+    }
+
+    /* ---------- Footer ---------- */
+    footer .nav-footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .nav-footer ul li {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
