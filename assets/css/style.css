@@ -72,6 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2em;
+    z-index: 30;
 }
 
 header .logo {
@@ -127,28 +128,12 @@ header nav {
     transition: .5s;
 }
 
-/* .burger-button:active .burger-top {
-    transform: rotate(45deg);
-    border-color: var(--jaune);
-    background-color: var(--jaune);
-}
-
-.burger-button:active .burger-middle {
-    border-color: transparent;
-    background-color: transparent;
-}
-
-.burger-button:active .burger-bottom {
-    transform: rotate(-45deg);
-    border-color: var(--violet);
-    background-color: var(--violet);
-} */
-
 .burger-menu {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     position: fixed;
-    top: -100vh;
+    margin-top: 8em;
+    top: -130vh;
     left: 0px;
     right: 0px;
     background-color: var(--jaune);
@@ -160,7 +145,7 @@ header nav {
     text-align: center;
 }
 
-.burger-menu .active {
+.burger-menu.active {
     top: 0;
     bottom: 0;
 }
