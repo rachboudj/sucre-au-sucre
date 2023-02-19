@@ -70,16 +70,16 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2em;
 }
 
 header .logo {
-    font-size: 1.6em;
-    font-family: var(--police-titre);
-    color: var(--blanc);
-    -webkit-text-stroke: 1.5px var(--noir);
-    display: flex;
-    flex-direction: column;
+    width: 100px;
+}
+
+header .logo img {
+    width: 100%;
 }
 
 header .logo .au:nth-child(2), .sucre:nth-child(3){
