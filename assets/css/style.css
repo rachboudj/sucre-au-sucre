@@ -126,21 +126,8 @@ header nav {
     display: block;
     transition: .5s;
 }
-/* 
-.burger-top,
-.burger-bottom {
-    position: absolute;
-}
 
-.burger-top {
-    z-index: 20;
-}
-
-.burger-bottom {
-    z-index: 20;
-} */
-
-.burger-button:active .burger-top {
+/* .burger-button:active .burger-top {
     transform: rotate(45deg);
     border-color: var(--jaune);
     background-color: var(--jaune);
@@ -155,6 +142,27 @@ header nav {
     transform: rotate(-45deg);
     border-color: var(--violet);
     background-color: var(--violet);
+} */
+
+.burger-menu {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left: 0px;
+    right: 0px;
+    background-color: var(--jaune);
+    padding: 3em;
+    z-index: 5;
+    transition: .5s;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.burger-menu .active {
+    top: 0;
+    bottom: 0;
 }
 
 /* ---------- Section présentation ---------- */
