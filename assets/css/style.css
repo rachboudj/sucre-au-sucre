@@ -1,30 +1,43 @@
 @import url("https://use.typekit.net/srf8wqp.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(./mentions-legales.css);
+@import url(./plan-site.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Liens utiles */
 :root {
     --noir: #272727;
+    --violet: #692862;
     --rose: #F2ACEB;
     --jaune: #FFEC5F;
     --marron-claire: #FDEEDD;
+    --blanc: #ffffff;
+    --ombre: #B581B0;
+    --gris: #BFBFBF;
     --police-titre: "cooper-black-std", serif;
     --police-texte: 'Poppins', sans-serif;
 }
 
 h1 {
     font-family: var(--police-titre);
-    font-size: 8em;
+    font-size: 3em;
 }
 
 h2 {
     font-family: var(--police-titre);
-    font-size: 5em;
+    font-size: 1.8em;
+    text-shadow: 4px 4px var(--gris);
+}
+
+p {
+    font-family: var(--police-texte);
+    font-weight: 300;
 }
 
 li {
@@ -38,5 +51,692 @@ button {
 a {
     text-decoration: none;
     color: var(--noir);
+    font-family: var(--police-texte);
     font-weight: 500;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.marron-claire {
+    color: var(--marron-claire);
+}
+
+/* Le header */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    z-index: 30;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .logo .au:nth-child(2), .sucre:nth-child(3){
+    margin-top: -20px;
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+.menu-burger .burger-button {
+    z-index: 9;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-burger .burger-button span {
+    border-radius: 30px;
+}
+
+.menu-burger .burger-button .burger-top {
+    width: 30px;
+    border: 2px solid var(--jaune);
+    background-color: var(--jaune);
+    display: block;
+    transition: .5s;
+}
+
+.menu-burger .burger-button .burger-middle {
+    width: 30px;
+    margin-top: 8px;
+    border: 2px solid var(--noir);
+    background-color: var(--noir);
+    display: block;
+    transition: .5s;
+}
+
+.menu-burger .burger-button .burger-bottom {
+    width: 30px;
+    margin-top: 8px;
+    border: 2px solid var(--violet);
+    background-color: var(--violet);
+    display: block;
+    transition: .5s;
+}
+
+.burger-menu {
+    height: 50vh;
+    display: flex;
+    position: fixed;
+    margin-top: 8em;
+    top: -130vh;
+    left: 0px;
+    right: 0px;
+    background-color: var(--jaune);
+    padding: 3em;
+    z-index: 5;
+    transition: .5s;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.burger-menu.active {
+    top: 0;
+    bottom: 0;
+}
+
+/* ---------- Section présentation ---------- */
+
+#presentation {
+    padding: 12em 0 8em;
+    background-color: var(--rose);
+}
+
+#presentation .texte-presentation {
+    padding: 0 2em;
+}
+
+#presentation .texte-presentation .citation {
+    font-family: var(--police-texte);
+    font-weight: 600;
+    font-style: normal;
+    color: var(--blanc);
+}
+
+#presentation .texte-presentation h1 {
+    color: var(--blanc);
+    -webkit-text-stroke: 2px var(--noir);
+    text-shadow: 6px 6px 0px var(--ombre);
+    font-weight: 900;
+    margin-top: 0.4em;
+}
+
+#presentation .texte-presentation button {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--ombre);
+}
+
+#presentation .texte-presentation button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+#presentation img {
+    display: none;
+}
+
+/* ---------- Section à propos ---------- */
+#a-propos {
+    padding: 10em 0;
+}
+
+#a-propos img {
+    display: none;
+}
+
+#a-propos .texte-a-propos {
+    padding: 0 2em;
+}
+
+#a-propos .texte-a-propos p {
+    margin-top: 1em;
+    font-family: var(--police-texte);
+    font-weight: 300;
+}
+
+#a-propos .texte-a-propos button {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#a-propos .texte-a-propos button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+
+/* ---------- Section recette ---------- */
+#recette {
+    background-color: var(--marron-claire);
+    padding: 6em 0;
+}
+
+#recette h2 {
+    text-align: center;
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+#recette .container-carte-recette {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#recette .container-carte-recette .carte-recette {
+    width: 100%;
+    margin-top: 3em;
+}
+
+#recette .container-carte-recette .carte-recette .img-recette {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#recette .container-carte-recette .carte-recette .img-recette img {
+    width: 100%;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette {
+    text-align: center;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette h3 {
+    font-family: var(--police-texte);
+    font-weight: 600;
+}
+
+#recette .container-carte-recette .carte-recette .texte-recette p {
+    font-family: var(--police-texte);
+    font-weight: 300;
+}
+
+/* ---------- Section donuts ---------- */
+#donuts {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#donuts .carte-donuts {
+    background-color: var(--jaune);
+    margin-top: 2em;
+    padding: 2em 0 4em 0;
+    width: 90%;
+    border: 4px solid var(--noir);
+    border-radius: 30px 0 0 30px;
+    box-shadow: -6px -6px var(--gris);
+}
+
+#donuts .carte-rose {
+    background-color: var(--rose);
+    margin-top: 2em;
+    padding: 2em 0 4em 0;
+    width: 90%;
+    border: 4px solid var(--noir);
+    border-radius: 0 30px 30px 0;
+    box-shadow: 6px 6px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts {
+    text-align: center;
+}
+
+#donuts .carte-donuts .texte-donuts h3 {
+    font-size: 1.8em;
+    font-family: var(--police-texte);
+    font-weight: 600;
+}
+
+#donuts .carte-donuts .texte-donuts .prix {
+    font-size: 1.5em;
+    font-family: var(--police-titre);
+    font-weight: 600;
+}
+
+#donuts .carte-donuts .texte-donuts p {
+    width: 60%;
+    margin: 2em auto 0;
+    font-size: 0.9em;
+}
+
+#donuts .carte-donuts .texte-donuts button {
+    background-color: var(--rose);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts .btn-jaune {
+    background-color: var(--jaune);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2em;
+    box-shadow: 4px 4px var(--gris);
+}
+
+#donuts .carte-donuts .texte-donuts button a {
+    font-family: var(--police-texte);
+    color: var(--noir);
+}
+
+/* ---------- Section la ref ---------- */
+#ref {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: 4px solid var(--noir);
+    border-bottom: 4px solid var(--noir);
+    padding-bottom: 4em;
+}
+
+#ref .texte-ref {
+    margin-top: 4em;
+    padding: 0 2em;
+}
+
+#ref .texte-ref p {
+    margin-top: 1em;
+}
+
+#ref .video-ref {
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+    width: 100%;
+    background-image: url(/assets/img/amine-billy-twitch.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ref .video-ref iframe {
+    width: 90%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+
+/* ---------- Section créateurs ---------- */
+#createurs {
+    padding: 6em 0;
+    background-color: var(--marron-claire);
+}
+
+#createurs h2 {
+    padding: 0 1em;
+}
+
+#createurs .container-carte-createurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#createurs .carte-createurs {
+    background-color: var(--blanc);
+    width: 90%;
+    margin-top: 2em;
+    padding-bottom: 4em;
+    border-radius: 30px;
+    border: 4px solid var(--noir);
+    box-shadow: 6px 6px var(--gris);
+    overflow: hidden;
+}
+
+#createurs .carte-createurs .texte-createurs {
+    padding: 2em 2em 0 2em;
+}
+
+#createurs .carte-createurs .texte-createurs h3 {
+    font-family: var(--police-titre);
+    font-size: 2em;
+}
+
+#createurs .carte-createurs .texte-createurs .tag {
+    font-size: 1em;
+    margin-top: -4px;
+}
+
+#createurs .carte-createurs .texte-createurs p {
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs .img-reseaux {
+    width: 25px;
+    margin-right: 2em;
+}
+
+#createurs .carte-createurs .reseaux-createurs .img-reseaux img {
+    width: 100%;
+}
+
+/* ---------- Section créateurs ---------- */
+footer {
+    padding: 4em 0;
+    background-color: var(--noir);
+    color: var(--blanc);
+}
+
+footer .nav-footer ul {
+    text-align: center;
+}
+
+footer .nav-footer ul li a {
+    color: var(--blanc);
+    font-weight: 300;
+}
+
+footer .copyright {
+    margin-top: 3em;
+    text-align: center;
+}
+
+footer .copyright p {
+    font-weight: 500;
+}
+
+footer .copyright a {
+    color: var(--marron-claire);
+}
+
+@media screen and (min-width: 768px) {
+    /* ---------- Section présentation ---------- */
+    #presentation {
+        display: flex;
+    }
+    
+    #presentation .img-presentation img {
+        display: block;
+    }
+
+    /* ---------- Section à propos ---------- */
+    #a-propos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #a-propos .img-a-propos img {
+        display: block;
+    }
+
+    #a-propos .texte-a-propos {
+        padding: 0 4em 0 0;
+    }
+
+    /* ---------- Section recette ---------- */
+    #recette h2 {
+        font-size: 2.5em;
+    }
+
+    #recette .container-carte-recette {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #recette .container-carte-recette .carte-recette {
+        width: 33%;
+    }
+
+    /* ---------- Section donuts ---------- */
+    #donuts {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #donuts .carte-donuts {
+        width: 45%;
+    }
+
+    /* ---------- Section la ref ---------- */
+    #ref {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #ref .texte-ref {
+        margin-top: 0;
+        padding: 0 2em;
+        width: 50%;
+    }
+
+    #ref .video-ref {
+        width: 50%;
+    }
+
+    #ref .video-ref iframe {
+        height: 20vh;
+    }
+
+    /* ---------- Section créateurs ---------- */
+    #createurs {
+        padding: 6em 2em;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .img-createurs {
+        width: 40%;
+        border-right: 4px solid var(--noir);
+        height: 100%;
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .aminematue-bg {
+        border-right: none;
+        border-left: 4px solid var(--noir);
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .img-createurs img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* display: none; */
+    }
+
+    #createurs .container-carte-createurs .carte-createurs .texte-createurs {
+        width: 60%;
+        padding: 3em 2em;
+    }
+
+    /* ---------- Footer ---------- */
+    footer .nav-footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .nav-footer ul li {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    header nav {
+        display: block;
+        width: 60%;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header nav ul li .btn-commander {
+        background-color: var(--jaune);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 2em;
+        box-shadow: 4px 4px var(--gris);
+        font-family: var(--police-texte);
+        color: var(--noir);
+        text-transform: lowercase;
+    }
+
+    header .menu-burger {
+        display: none;
+    }
+
+    /* ---------- Section présentation ---------- */
+    #presentation {
+        padding: 12em 6em 8em 6em;
+        align-items: center;
+    }
+
+    #presentation .texte-presentation {
+        width: 50%;
+    }
+
+    #presentation .texte-presentation .citation {
+        font-size: 1.5em;
+    }
+
+    #presentation .texte-presentation h1 {
+        margin-top: 0;
+        font-size: 4.5em;
+    }
+
+    #presentation .img-presentation {
+        width: 50%;
+    }
+
+    /* ---------- Section à propos ---------- */
+    #a-propos {
+        padding: 6em 0;
+    }
+
+    #a-propos .img-a-propos{
+        width: 50%;
+    }
+
+    #a-propos .img-a-propos img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #a-propos .texte-a-propos {
+        width: 50%;
+    }
+
+    #a-propos .texte-a-propos p {
+        width: 70%;
+    }
+
+    /* ---------- Section recette ---------- */
+    #recette h2 {
+        font-size: 3.5em;
+    }
+
+    #recette .container-carte-recette .carte-recette .img-recette {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #recette .container-carte-recette .carte-recette .img-recette {
+        width: 50%;
+    }
+
+    #recette .container-carte-recette .carte-recette .texte-recette h3 {
+        font-size: 1.7em;
+    }
+
+    #recette .container-carte-recette .carte-recette .texte-recette p {
+        padding: 0 5em;
+    }
+
+    /* ---------- Section donuts ---------- */
+    #donuts {
+        padding: 0 4em;
+    }
+    
+    #donuts .carte-donuts {
+        width: 45%;
+    }
+
+    #donuts .carte-donuts .img-donuts {
+        display: flex;
+        justify-content: center;
+    }
+
+    #donuts .carte-donuts .img-donuts img {
+        width: 80%;
+    }
+
+    #donuts .carte-donuts .texte-donuts p {
+        font-size: 1em;
+    }
+
+    /* ---------- Section la ref ---------- */
+    #ref .texte-ref {
+        padding: 0 4em;
+    }
+    
+    #ref .video-ref iframe {
+        height: 50vh;
+    }
+
+    /* ---------- Section la ref ---------- */
+    #createurs {
+        padding: 6em 3em;
+    }
 }

@@ -1,0 +1,31 @@
+:root {
+    --noir: #272727;
+    --violet: #692862;
+    --rose: #F2ACEB;
+    --jaune: #FFEC5F;
+    --marron-claire: #FDEEDD;
+    --blanc: #ffffff;
+    --ombre: #B581B0;
+    --gris: #BFBFBF;
+    --police-titre: "cooper-black-std", serif;
+    --police-texte: 'Poppins', sans-serif;
+}
+
+.mentions-legales {
+    padding: 10em 3em;
+}
+
+.mentions-legales h2 {
+    box-shadow: none;
+    margin-top: 1.5em;
+}
+
+.mentions-legales h3 {
+    font-family: var(--police-texte);
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.mentions-legales p {
+    margin-top: 0.4em;
+}

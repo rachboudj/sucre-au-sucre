@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucré au sucre, les meilleurs donuts de France</title>
+    <title>Sucré au sucre, des donuts sucrés</title>
+    <meta name="title" content="Sucré au sucre | Les meilleurs donuts de Rouen !" />
+    <meta name="description"
+        content="De délicieux donuts sucré issu d'une recette dont nous seuls avont le secret..." />
+    <meta name="author" content="Rachid Boudjakdji" />
+    <link rel="icon" width="100" height="100" href="./assets/img/logo-sucre-ausucre-removebg-preview.png" />
+
+    <!-- Le CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            Sucré au sucre
+            <a href="/index.html">
+                <img src="./assets/img/logo-sucreausucre.png" alt="Logo sucré au sucre">
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">La recette</a></li>
-                <li><a href="#">La ref</a></li>
-                <li><a href="#">Les créateurs</a></li>
-                <li><a href="#">Commander</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#recette">La recette</a></li>
+                <li><a href="#ref">La ref</a></li>
+                <li><a href="#createurs">Les créateurs</a></li>
+                <li><a class="btn-commander" href="#donuts">Commander</a></li>
             </ul>
         </nav>
+        <div class="menu-burger">
+            <div class="burger-button">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+            <div class="burger-menu">
+                <ul>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#recette">La recette</a></li>
+                    <li><a href="#ref">La ref</a></li>
+                    <li><a href="#createurs">Les créateurs</a></li>
+                    <li><a href="#donuts">Commander</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+
     <body>
         <main>
             <section id="presentation">
-                <div class="text-presentation">
-                    <span>Un donuts sucré c’est bien...</span>
-                    <h1>Mais au sucre, c'est mieux !</h1>
-                    <button><a href="#">en savoir plus</a></button>
+                <div class="texte-presentation">
+                    <span class="citation">Un donuts sucré c’est bien...</span>
+                    <h1>Mais au sucre, <span class="marron-claire">c'est mieux </span> !</h1>
+                    <button><a href="#a-propos">en savoir plus</a></button>
                 </div>
                 <div class="img-presentation">
-                    <img src="./assets/img/deux-donuts-vol-removebg.png" alt="Deux donuts qui voltige avec une ombre en dessous">
+                    <img src="./assets/img/deux-donuts-vol-removebg.png"
+                        alt="Deux donuts qui voltige avec une ombre en dessous">
                 </div>
             </section>
 
@@ -40,38 +70,42 @@
                 </div>
                 <div class="texte-a-propos">
                     <h2>À propos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum deserunt at illum iusto, enim in aliquam est ducimus iste debitis minus ab, similique modi perferendis facere corporis id! Tempore, quam.</p>
-                    <button><a href="#">voir les donuts</a></button>
+                    <p>Créer par Amine & Billy, les donuts sucré au sucre sont là pour vous apporter votre douceur de la
+                        journée. Nos donuts sont les plus frais possible. Vous pouvez être sûr de trouver toujours le
+                        donuts parfait !</p>
+                    <button><a href="#donuts">voir les donuts</a></button>
                 </div>
             </section>
 
             <section id="recette">
                 <h2>Qu’est-ce qui fait que notre donuts est spécial ?</h2>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                <div class="container-carte-recette">
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>C’est un peu la base non ?</p>
+                        </div>
                     </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>C’est un peu la base non ?</p>
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>Ça n’a jamais fait de mal à personne.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
-                    </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>Ça n’a jamais fait de mal à personne.</p>
-                    </div>
-                </div>
-                <div class="carte-recette">
-                    <div class="img-recette">
-                        <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
-                    </div>
-                    <div class="texte-recette">
-                        <h3>Du sucre</h3>
-                        <p>Parce qu’il n’y en a jamais assez.</p>
+                    <div class="carte-recette">
+                        <div class="img-recette">
+                            <img src="./assets/img/sucette-removebg.png" alt="Deux sucettes croisés">
+                        </div>
+                        <div class="texte-recette">
+                            <h3>Du sucre</h3>
+                            <p>Parce qu’il n’y en a jamais assez.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -83,21 +117,25 @@
                     </div>
                     <div class="texte-donuts">
                         <h3>Le donuts</h3>
-                        <h4>49,99 €</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <button><a href="#">commander</a></button>
+                        <span class="prix">4,60 €</span>
+                        <p>Le DOAT (Donuts Of All Time). Il a fallu 4 ans pour avoir la recette parfaite.</p>
+                        <button><a target="_blank"
+                                href="https://www.ubereats.com/fr/store/bakindonuts-rouen/PEKULGIBUpqiM0zZ7SdgZQ/404c188a-3e81-5bcd-99ff-2a7a6b304fb6/15aa188d-5269-5591-b776-adede37290cf/5d977211-f534-5a22-82ef-e8d337b8fbef">commander</a></button>
                     </div>
                 </div>
 
-                <div class="carte-donuts">
+                <div class="carte-donuts carte-rose">
                     <div class="img-donuts">
-                        <img src="./assets/img/pack-donuts-removebg.png" alt="7 donuts dans une boîte dont un en dehors">
+                        <img src="./assets/img/pack-donuts-removebg.png"
+                            alt="7 donuts dans une boîte dont un en dehors">
                     </div>
                     <div class="texte-donuts">
                         <h3>Le pack</h3>
-                        <h4>49,99 €</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <button><a href="#">commander</a></button>
+                        <span class="prix">25,50 €</span>
+                        <p>Imaginez une journée avec 7 fois plus plaisir. C'est possible avec notre pack de 8 donuts.
+                        </p>
+                        <button class="btn-jaune"><a target="_blank"
+                                href="https://www.ubereats.com/fr/store/bakindonuts-rouen/PEKULGIBUpqiM0zZ7SdgZQ/404c188a-3e81-5bcd-99ff-2a7a6b304fb6/65e168d4-e055-57a9-95ee-52b64dc6eae6/45cfdd60-8cb0-5cff-aa74-ae48a1ddef46">commander</a></button>
                     </div>
                 </div>
             </section>
@@ -105,63 +143,96 @@
             <section id="ref">
                 <div class="texte-ref">
                     <h2>Je n'ai pas la ref</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Le donuts sucré au sucre est une référence à un meme aujourd'hui célèbre qui s'est déroulé dans
+                        un live twitch. Contexte : Amine demande à Billy de faire une imitation de Omer Simpson. Nous
+                        vous laissons savourer la suite de cette vidéo légendaire.</p>
                 </div>
                 <div class="video-ref">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ior3WJUDy0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ior3WJUDy0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </section>
 
             <section id="createurs">
                 <h2>Les créateurs</h2>
-                <div class="carte-createurs">
-                    <div class="img-createurs">
-                        <img src="./assets/img/billy-bg.webp" alt="Le streameur Billy Rebeudeter">
-                    </div>
-                    <div class="texte-createurs">
-                        <h3>RebeuDeter</h3>
-                        <p class="tag">@rebeudeter</p>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                        <div class="reseaux-createurs">
-                            <img src="./assets/img/twitter.png" alt="Logo de twitter">
-                            <img src="./assets/img/twitch.png" alt="Logo de twitch">
-                            <img src="./assets/img/instagram.png" alt="Logo de instagram">
+                <div class="container-carte-createurs">
+                    <div class="carte-createurs">
+                        <div class="img-createurs billy-bg">
+                            <img src="./assets/img/billy-bg.webp" alt="Le streameur Billy Rebeudeter">
+                        </div>
+                        <div class="texte-createurs">
+                            <h3>RebeuDeter</h3>
+                            <p class="tag">@rebeudeter</p>
+                            <p>À la base tweetos, Billy s'est lancé sur twitch lors du 1er confinement en 2020 avec son
+                                personnage Billy Gon. Il s'est
+                                fait connaitre sur cette plateforme grâce au jeu GTA RP. Par la suite il a diversifié
+                                son contenu en faisant des live IRL, urbex...</p>
+                            <div class="reseaux-createurs">
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://twitter.com/RebeuDeter"><img
+                                            src="./assets/img/twitter.png" alt="Logo de twitter"></a>
+                                </div>
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://www.twitch.tv/rebeudeter"><img
+                                            src="./assets/img/twitch.png" alt="Logo de twitch"></a>
+                                </div>
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://www.instagram.com/rebeudeter/"><img
+                                            src="./assets/img/instagram.png" alt="Logo de instagram"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="carte-createurs">
-                    <div class="img-createurs">
-                        <img src="./assets/img/aminematue-bg.jpeg" alt="Le streameur Billy Rebeudeter">
-                    </div>
-                    <div class="texte-createurs">
-                        <h3>AmineMaTue</h3>
-                        <p class="tag">@aminematue</p>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                        <div class="reseaux-createurs">
-                            <img src="./assets/img/twitter.png" alt="Logo de twitter">
-                            <img src="./assets/img/twitch.png" alt="Logo de twitch">
-                            <img src="./assets/img/instagram.png" alt="Logo de instagram">
+                    <div class="carte-createurs">
+                        <div class="img-createurs aminematue-bg">
+                            <img src="./assets/img/aminematue-bg.jpeg" alt="Le streameur Billy Rebeudeter">
+                        </div>
+                        <div class="texte-createurs">
+                            <h3>AmineMaTue</h3>
+                            <p class="tag">@aminematue</p>
+                            <p>Amine était aussi à la base un tweetos mais aussi auteur pour certains youtubeur (Maskey,
+                                Kevin Tran...). Il se lance sérieusement aussi en 2020 sur twitch avce le jeu GTA RP et
+                                son personnage Amine Zeubio. Il diversifie aussi son contenu par la suite avec de gros
+                                évènements comment le five club (un tournoi de five avec des streamers) et dernièrement
+                                le Eleven All Star qui confrontait les youtubeurs et streamers français et ceux
+                                de l'Espagne.</p>
+                            <div class="reseaux-createurs">
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://twitter.com/AmineMaTue"><img
+                                            src="./assets/img/twitter.png" alt="Logo de twitter"></a>
+                                </div>
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://www.twitch.tv/aminematue"><img
+                                            src="./assets/img/twitch.png" alt="Logo de twitch"></a>
+                                </div>
+                                <div class="img-reseaux">
+                                    <a target="_blank" href="https://www.instagram.com/aminematue/"><img
+                                            src="./assets/img/instagram.png" alt="Logo de instagram"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
+        <footer>
+            <div class="nav-footer">
+                <ul>
+                    <li><a href="./assets/pages/mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="./assets/pages/plan-site.html">Plan du site</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Sucré au sucre 2023 © Tous droits réservés - Site réalisé et géré par <a target="_blank"
+                        href="https://github.com/rachboudj">Rachid Boudjakdji</a></p>
+            </div>
+        </footer>
+
+        <script src="./assets/js/index.js"></script>
     </body>
 
-    <footer>
-        <div class="nav-footer">
-            <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Plan du site</a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            Sucré au sucre 2023 © Tous droits réservés - Site réalisé et géré par <a href="#">Rachid Boudjakdji</a>
-        </div>
-    </footer>
-</body>
 </html>
