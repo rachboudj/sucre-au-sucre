@@ -645,7 +645,7 @@ footer .copyright a {
 
     /* ---------- Section présentation ---------- */
     #presentation {
-        padding: 12em 4em 8em 2em;
+        padding: 12em 6em 8em 6em;
         align-items: center;
     }
 
@@ -659,7 +659,7 @@ footer .copyright a {
 
     #presentation .texte-presentation h1 {
         margin-top: 0;
-        font-size: 4em;
+        font-size: 4.5em;
     }
 
     #presentation .img-presentation {
@@ -675,7 +675,12 @@ footer .copyright a {
         width: 50%;
     }
 
-    #a-propos .texte-a-propos{
+    #a-propos .img-a-propos img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #a-propos .texte-a-propos {
         width: 50%;
     }
 
@@ -689,7 +694,13 @@ footer .copyright a {
     }
 
     #recette .container-carte-recette .carte-recette .img-recette {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #recette .container-carte-recette .carte-recette .img-recette {
+        width: 50%;
     }
 
     #recette .container-carte-recette .carte-recette .texte-recette h3 {
@@ -707,6 +718,15 @@ footer .copyright a {
     
     #donuts .carte-donuts {
         width: 45%;
+    }
+
+    #donuts .carte-donuts .img-donuts {
+        display: flex;
+        justify-content: center;
+    }
+
+    #donuts .carte-donuts .img-donuts img {
+        width: 80%;
     }
 
     #donuts .carte-donuts .texte-donuts p {
