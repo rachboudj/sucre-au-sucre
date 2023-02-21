@@ -64,7 +64,7 @@ img {
     color: var(--marron-claire);
 }
 
-/* Le header */
+/* ---------- Le header ---------- */
 header {
     position: fixed;
     width: 100%;
@@ -83,26 +83,21 @@ header .logo img {
     width: 100%;
 }
 
-header .logo .au:nth-child(2), .sucre:nth-child(3){
-    margin-top: -20px;
-    text-align: center;
-}
-
 header nav {
     display: none;
 }
 
-.menu-burger .burger-button {
+header .menu-burger .burger-button {
     z-index: 9;
     padding: 15px;
     cursor: pointer;
 }
 
-.menu-burger .burger-button span {
+header .menu-burger .burger-button span {
     border-radius: 30px;
 }
 
-.menu-burger .burger-button .burger-top {
+header .menu-burger .burger-button .burger-top {
     width: 30px;
     border: 2px solid var(--jaune);
     background-color: var(--jaune);
@@ -110,7 +105,7 @@ header nav {
     transition: .5s;
 }
 
-.menu-burger .burger-button .burger-middle {
+header .menu-burger .burger-button .burger-middle {
     width: 30px;
     margin-top: 8px;
     border: 2px solid var(--noir);
@@ -119,7 +114,7 @@ header nav {
     transition: .5s;
 }
 
-.menu-burger .burger-button .burger-bottom {
+header .menu-burger .burger-button .burger-bottom {
     width: 30px;
     margin-top: 8px;
     border: 2px solid var(--violet);
@@ -128,7 +123,7 @@ header nav {
     transition: .5s;
 }
 
-.burger-menu {
+header .burger-menu {
     height: 50vh;
     display: flex;
     position: fixed;
@@ -145,7 +140,7 @@ header nav {
     text-align: center;
 }
 
-.burger-menu.active {
+header .burger-menu.active {
     top: 0;
     bottom: 0;
 }
@@ -432,7 +427,6 @@ header nav {
 
 #createurs .carte-createurs .reseaux-createurs {
     display: flex;
-    /* justify-content: space-around; */
     margin-top: 2em;
 }
 
@@ -576,7 +570,6 @@ footer .copyright a {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* display: none; */
     }
 
     #createurs .container-carte-createurs .carte-createurs .texte-createurs {
