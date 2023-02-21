@@ -367,7 +367,7 @@ header .burger-menu.active {
     justify-content: center;
     padding: 4em 0;
     width: 100%;
-    background-image: url(assets/img/amine-billy-twitch.jpg);
+    background-image: url(/assets/img/amine-billy-twitch.jpg);
     background-size: cover;
     background-position: center;
 }
