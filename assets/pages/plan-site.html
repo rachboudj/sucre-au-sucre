@@ -14,14 +14,12 @@
     <header>
         <div class="logo">
             <a href="/index.html">
-                <span>sucré</span>
-                <span class="au">au</span>
-                <span class="sucre">sucre</span>
+                <img src="../img/logo-sucreausucre.png" alt="Logo sucré au sucre">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="/index.html/#a-propos">À propos</a></li>
                 <li><a href="#recette">La recette</a></li>
                 <li><a href="#ref">La ref</a></li>
                 <li><a href="#createurs">Les créateurs</a></li>
@@ -29,32 +27,26 @@
             </ul>
         </nav>
         <div class="menu-burger">
-            <div class="burger-button">
+            <div onclick="openMenu()" class="burger-button">
                 <span class="burger-top"></span>
                 <span class="burger-middle"></span>
                 <span class="burger-bottom"></span>
             </div>
-            <!-- <div class="burger-menu">
-                <div class="nav-burger">
-                    <ul>
-                        <li><a href="#a-propos">À propos</a></li>
-                        <li><a href="#recette">La recette</a></li>
-                        <li><a href="#ref">La ref</a></li>
-                        <li><a href="#createurs">Les créateurs</a></li>
-                        <li><a href="#donuts">Commander</a></li>
-                    </ul>
-                </div>
-            </div> -->
+            <div class="burger-menu">
+                <ul>
+                    <li><a onclick="openMenu()" href="/index.html">Accueil</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="plan-site">
+        <section class="plan-site">
             <ul>
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="./mentions-legales.html">Mentions légales</a></li>
             </ul>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -69,6 +61,8 @@
                     href="https://github.com/rachboudj">Rachid Boudjakdji</a></p>
         </div>
     </footer>
+
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

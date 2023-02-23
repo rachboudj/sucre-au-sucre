@@ -14,9 +14,7 @@
     <header>
         <div class="logo">
             <a href="/index.html">
-                <span>sucré</span>
-                <span class="au">au</span>
-                <span class="sucre">sucre</span>
+                <img src="../img/logo-sucreausucre.png" alt="Logo sucré au sucre">
             </a>
         </div>
         <nav>
@@ -29,26 +27,20 @@
             </ul>
         </nav>
         <div class="menu-burger">
-            <div class="burger-button">
+            <div onclick="openMenu()" class="burger-button">
                 <span class="burger-top"></span>
                 <span class="burger-middle"></span>
                 <span class="burger-bottom"></span>
             </div>
-            <!-- <div class="burger-menu">
-                <div class="nav-burger">
-                    <ul>
-                        <li><a href="#a-propos">À propos</a></li>
-                        <li><a href="#recette">La recette</a></li>
-                        <li><a href="#ref">La ref</a></li>
-                        <li><a href="#createurs">Les créateurs</a></li>
-                        <li><a href="#donuts">Commander</a></li>
-                    </ul>
-                </div>
-            </div> -->
+            <div class="burger-menu">
+                <ul>
+                    <li><a onclick="openMenu()" href="/index.html">Accueil</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
-        <div class="mentions-legales">
+        <section class="mentions-legales">
             <h1>MENTIONS LÉGALES</h1>
             <h2>IDENTITE</h2>
 
@@ -134,7 +126,7 @@
             conseils en investissements financiers, la souscription de produits d’assurance ou encore à de
             l’intermédiation en opérations de banque, en services de paiement et à plusieurs opérations relatives à des
             contrats de crédit.</p>
-        </div>
+            </section>
     </main>
 
     <footer>
@@ -149,6 +141,8 @@
                     href="https://github.com/rachboudj">Rachid Boudjakdji</a></p>
         </div>
     </footer>
+
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
